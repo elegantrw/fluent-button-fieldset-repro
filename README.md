@@ -1,7 +1,7 @@
 # Fluent button fieldset bug
 
 A standalone HTML/JavaScript reproduction using Fluent Web Components **3.1.3** and FAST Element
-**3.1.0**. Vite serves the page. No Angular or fluent-angular dependencies.
+**3.1.0**. Vite serves the page.
 
 ## Run
 
