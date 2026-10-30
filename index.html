@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fluent button fieldset bug</title>
+    <style>
+      body {
+        font:
+          16px/1.5 system-ui,
+          sans-serif;
+        max-width: 40rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      fieldset {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fluent button fieldset bug</h1>
+    <p>
+      Click both buttons. Click <strong>Disable fieldset</strong>, then
+      <strong>Enable fieldset</strong>. Both buttons should work again, but the Fluent button stays
+      disabled. Reload the page to start again.
+    </p>
+    <button id="disable" type="button" disabled>Disable fieldset</button>
+    <button id="enable" type="button" disabled>Enable fieldset</button>
+    <fieldset id="group">
+      <legend>Compare the buttons</legend>
+      <fluent-button id="fluent" type="button">Fluent button</fluent-button>
+      <button id="native" type="button">Native button</button>
+    </fieldset>
+    <p id="message" role="status">Click a button to check it works.</p>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
